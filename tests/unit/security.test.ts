@@ -40,7 +40,7 @@ describe('response headers', () => {
     expect(readme).not.toMatch(/\bMIT\b/);
     const notices = readFileSync(new URL('../../public/THIRD_PARTY_NOTICES.txt', import.meta.url), 'utf8').split('\n');
     expect(notices[3]).toBe(
-      'This application is licensed under GPL-3.0-or-later. Source: https://github.com/LewisAGI/pdf-to-audiobook. The components below keep their own licenses.',
+      'This application is licensed under GPL-3.0-or-later. Source: https://github.com/Lewis-AI-Collab/pdf-to-audiobook. The components below keep their own licenses.',
     );
     expect(notices.slice(0, 6).join('\n')).not.toMatch(/MIT/);
     const vite = readFileSync(new URL('../../vite.config.ts', import.meta.url), 'utf8');
